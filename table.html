@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    table {
+      border: 2px solid #555;
+      border-collapse: separate;
+      border-spacing: 8px;
+      width: 320px;
+      margin: 20px auto;
+    }
+    td, th {
+      border: 1px solid #999;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <!-- Row 1: "name" spans 2 columns, "Address" spans 2 rows -->
+    <tr>
+      <th colspan="2">name</th>
+      <th rowspan="2">Address</th>
+    </tr>
+
+    <!-- Row 2: First and Last -->
+    <tr>
+      <th>First</th>
+      <th>Last</th>
+    </tr>
+
+    <!-- Row 3: green bar spanning all 3 columns -->
+    <tr>
+      <td colspan="3" style="background-color: green;">All the data is here</td>
+    </tr>
+
+    <!-- Row 4: "Hamada" spans 2 columns and 2 rows, "cairo" in the last column -->
+    <tr>
+      <td colspan="2" rowspan="2">Hamada</td>
+      <td style="color: red;">cairo</td>
+    </tr>
+
+    <!-- Row 5: lorem text in the last column -->
+    <tr>
+      <td>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</td>
+    </tr>
+  </table>
+
+</body>
+</html>
